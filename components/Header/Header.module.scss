@@ -1,0 +1,56 @@
+.header {
+  background-color: #f8f8f8;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex; // Flexboxを使用してアイテムを整列
+  align-items: center; // アイテムを垂直方向中央に配置
+
+  a {
+    margin-left: 1.5rem;
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // サインインボタンのスタイル
+  .signInButton {
+    margin-left: 1.5rem; // 他のリンクとの間隔
+    padding: 0.5rem 1rem; // パディング
+    color: #fff; // 文字色
+    background-color: #0070f3; // 背景色
+    border: none; // 枠線なし
+    border-radius: 5px; // 角丸
+    text-decoration: none; // 下線なし
+    font-size: 1rem; // フォントサイズ
+    cursor: pointer; // カーソルをポインターに
+    transition: background-color 0.2s ease; // ホバー効果
+
+    &:hover {
+      background-color: #005bb5; // ホバー時の背景色
+      text-decoration: none; // ホバー時も下線なし
+    }
+  }
+}

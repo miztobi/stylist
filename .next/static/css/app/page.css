@@ -1,0 +1,83 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./styles/Home.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/* フッタースタイルはFooter.module.scssに移動したため削除 */
+.Home_container__B1VFq {
+  padding: 0 2rem;
+  /* Header/Footerが独自のパディングを追加するため、必要に応じてメインコンテナのパディングを調整 */
+  /* 例：Header/Footerが処理する場合、上下のパディングを削除 */
+  /* padding: 0 2rem; */
+  display: flex; /* 中央揃えのためにflexboxを使用 */
+  flex-direction: column;
+  justify-content: center; /* 垂直方向中央揃え */
+  align-items: center; /* 水平方向中央揃え */
+  min-height: calc(100vh - 120px); /* Header/Footerの高さに基づいて調整 */
+  /* 上記のmin-heightは基本的な例であり、調整が必要な場合があります */
+}
+
+/* ページコンテンツ領域に固有の場合は.mainスタイルを保持 */
+/* .mainがレイアウト専用だった場合、削除または調整される可能性があります */
+/* 現時点では、ページ固有のメインスタイリングが必要になる可能性があると仮定します */
+.Home_main__3vDCl {
+  /* min-height、flex: 1、paddingを削除 - layout/containerで処理 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* mainがコンテナ内で全幅を占めるようにする */
+  padding: 4rem 0; /* mainコンテンツの上下にパディングを追加 */
+}
+
+.Home_title__CJM6I {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+}
+.Home_title__CJM6I a {
+  color: #0070f3;
+  text-decoration: none;
+}
+.Home_title__CJM6I a:hover, .Home_title__CJM6I a:focus, .Home_title__CJM6I a:active {
+  text-decoration: underline;
+}
+
+.Home_description__W1Hx1 {
+  margin: 2rem 0; /* 上下のマージンを調整 */
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.Home_code__cY_Tv {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+/* .logoスタイルはFooter.module.scssに移動したため削除 */
+/* CTAボタンコンテナ */
+.Home_ctaButtonContainer__uddDR {
+  margin-top: 2rem; /* 説明文との間にスペースを追加 */
+}
+
+/* CTAボタン */
+.Home_ctaButton__iQVya {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.Home_ctaButton__iQVya:hover {
+  background-color: #005bb5;
+}

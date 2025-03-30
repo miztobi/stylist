@@ -1,0 +1,87 @@
+/* フッタースタイルはFooter.module.scssに移動したため削除 */
+.container {
+  padding: 0 2rem;
+  /* Header/Footerが独自のパディングを追加するため、必要に応じてメインコンテナのパディングを調整 */
+  /* 例：Header/Footerが処理する場合、上下のパディングを削除 */
+  /* padding: 0 2rem; */
+  display: flex; /* 中央揃えのためにflexboxを使用 */
+  flex-direction: column;
+  justify-content: center; /* 垂直方向中央揃え */
+  align-items: center; /* 水平方向中央揃え */
+  min-height: calc(100vh - 120px); /* Header/Footerの高さに基づいて調整 */
+  /* 上記のmin-heightは基本的な例であり、調整が必要な場合があります */
+}
+
+/* ページコンテンツ領域に固有の場合は.mainスタイルを保持 */
+/* .mainがレイアウト専用だった場合、削除または調整される可能性があります */
+/* 現時点では、ページ固有のメインスタイリングが必要になる可能性があると仮定します */
+.main {
+  /* min-height、flex: 1、paddingを削除 - layout/containerで処理 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* mainがコンテナ内で全幅を占めるようにする */
+  padding: 4rem 0; /* mainコンテンツの上下にパディングを追加 */
+}
+
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+
+  a {
+    color: #0070f3;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.description {
+  margin: 2rem 0; /* 上下のマージンを調整 */
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+/* .logoスタイルはFooter.module.scssに移動したため削除 */
+
+/* CTAボタンコンテナ */
+.ctaButtonContainer {
+  margin-top: 2rem; /* 説明文との間にスペースを追加 */
+}
+
+/* CTAボタン */
+.ctaButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #005bb5;
+  }
+}
